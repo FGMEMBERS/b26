@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">USAF green-alu</name>
+
+            <texture>b26-1.png</texture>
+
+        </livery>
+    </model>
+</sim>
+</PropertyList>

@@ -1,0 +1,501 @@
+<?xml version="1.0"?>
+<!--
+************************************************************************
+B-26 simulation config.
+
+May 2008 Detlef Faber 
+
+http://www.sol2500.net/flightgear
+
+don@sol2500.net
+************************************************************************
+-->
+
+<PropertyList>
+
+ <sim>
+
+  <description>B-26 Marauder</description>
+  <author>Detlef Faber</author>
+  <status>beta</status>
+  <flight-model>yasim</flight-model>
+  <aero>b26-yasim</aero>
+  <fuel-fraction>1.0</fuel-fraction>
+
+  <virtual-cockpit archive="y">true</virtual-cockpit>
+  <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
+
+  <sound>
+   <path>Aircraft/p51d/p51d-sound.xml</path>
+  </sound>
+<!--
+  <submodels> 
+    <serviceable type="bool">true</serviceable>
+    <path>Aircraft/beaufighter/Models/submodels.xml</path>
+  </submodels>
+-->
+  <panel>
+  <path>Aircraft/Generic/Panels/generic-vfr-panel.xml</path>
+  <visibility>false</visibility>
+  </panel>
+
+  <model>
+   <path>Aircraft/b26/Models/B-26.xml</path>
+  <livery>
+    <file/>
+  </livery>
+   <crew>
+     <pilot>
+       <visible type="double">1</visible>
+     </pilot>
+   </crew>
+  </model> 
+
+
+ 
+  <view n="0">
+   <internal archive="y">true</internal>
+   <config>
+    <x-offset-m archive="y" type="double">-0.3</x-offset-m>
+    <y-offset-m archive="y" type="double">0.8</y-offset-m>
+    <z-offset-m archive="y" type="double">2.9</z-offset-m>
+    <pitch-offset-deg>-17.5</pitch-offset-deg>
+   </config>
+  </view>
+
+  <view n="1">
+   <config>
+    <target-z-offset-m archive="y" type="double">6.0</target-z-offset-m>
+   </config>
+  </view>
+
+  <view n="2">
+   <config>
+    <target-z-offset-m archive="y" type="double">6.0</target-z-offset-m>
+   </config>
+  </view>
+
+  <view n="3">
+   <config>
+    <target-z-offset-m archive="y" type="double">6.0</target-z-offset-m>
+   </config>
+  </view>
+
+  <view n="4">
+   <config>
+    <target-z-offset-m archive="y" type="double">6.0</target-z-offset-m>
+   </config>
+  </view>
+
+  <view n="5">
+   <config>
+    <target-z-offset-m archive="y" type="double">6.0</target-z-offset-m>
+   </config>
+  </view>
+  <view n="6">
+   <config>
+    <target-z-offset-m archive="y" type="double">6.0</target-z-offset-m>
+   </config>
+  </view>
+
+
+ <autopilot>
+   <htempmode type="bool">false</htempmode>
+   <vtempmode type="bool">false</vtempmode>
+   <config>
+     <min-climb-speed-kt type="float">70.0</min-climb-speed-kt>
+     <best-climb-speed-kt type="float">75.0</best-climb-speed-kt>
+     <target-climb-rate-fpm type="float">500.0</target-climb-rate-fpm>
+     <target-descent-rate-fpm type="float">1000.0</target-descent-rate-fpm>
+     <elevator-adj-factor type="float">4000.0</elevator-adj-factor>
+     <integral-contribution type="float">0.01</integral-contribution>
+     <zero-pitch-throttle type="float">0.45</zero-pitch-throttle>
+     <zero-pitch-trim-full-throttle type="float">0.14</zero-pitch-trim-full-throttle>
+   </config>
+ </autopilot>
+
+  <hud>
+   <enable3d>false</enable3d>
+  </hud>
+
+  <help>
+    <key>
+      <name>F/f</name>
+      <desc>shift Blower higher/lower</desc>
+    </key>
+
+    <text>B-26 C Marauder
+Maximum permissive engine Manifold pressure 42 inHg for 5 min. In Emergency maximum 47 inHg. Maximum Continuous Power 40 inHg.
+--Take off--
+Flaps down 10 deg. Engines 40 inHg and 2700 rpm. Beware, the Nose Gear casters free. Rotate at 110-140 mph, flat out to gain speed. Once 150 mph Safety speed is reached reduce rpm to 2400 and climb. Shift Blower when needed to maintain 40 inHg Manifold pressure.
+-- Landing --
+Reduce Speed to 160 mph, drop Gear and Flaps. approach at 140 mph and do not flat out before Landing, let the Aircraft settle at 90-100 mph.
+ </text>
+  </help>
+
+	<menubar>
+		<default>
+			<menu n="10">
+				<label>B-26</label>
+					<enabled type="bool">true</enabled>
+<!--
+					<item>
+						<label>Magically start engine</label>
+						<binding>
+							<command>nasal</command>
+							<script>f4u.magicstart();</script>
+						</binding>
+					</item>
+-->
+					<item>
+						<label>Select Livery</label>
+              <binding>
+                <command>nasal</command>
+                <script>aircraft.livery.dialog.toggle()</script>
+              </binding>
+					</item>
+<!--
+					<item>
+						<label>Select Logo</label>
+              <binding>
+                <command>nasal</command>
+                <script>f4u.logo_dialog.toggle()</script>
+              </binding>
+					</item>
+-->
+			</menu>
+		</default>
+	</menubar>
+
+  <weight n="0">
+      <name>lower left Bomb Rail</name>
+      <weight-lb>0</weight-lb>
+      <selected>none</selected>
+      <opt>
+					<name>none</name>
+					<lbs>0</lbs>
+			</opt>
+     	<opt>
+					<name>1000 lbs Bomb</name>
+      		<lbs>1020.0</lbs>
+      </opt>
+      <opt>
+					<name>500 lbs Bomb</name>
+      		<lbs>510.0</lbs>
+      </opt>
+      <opt>
+					<name>300 lbs Bomb</name>
+      		<lbs>620.0</lbs>
+      </opt>
+      <opt>
+					<name>100 lbs Bomb</name>
+      		<lbs>330.0</lbs>
+      </opt>
+  </weight>
+
+  <weight n="1">
+      <name>lower right Bomb Rail</name>
+      <weight-lb>0</weight-lb>
+      <selected>none</selected>
+      <opt>
+					<name>none</name>
+					<lbs>0</lbs>
+			</opt>
+      <opt>
+					<name>1000 lbs Bomb</name>
+      		<lbs>1020.0</lbs>
+      </opt>
+      <opt>
+					<name>500 lbs Bomb</name>
+      		<lbs>510.0</lbs>
+      </opt>
+      <opt>
+					<name>300 lbs Bomb</name>
+      		<lbs>620.0</lbs>
+      </opt>
+      <opt>
+					<name>100 lbs Bomb</name>
+      		<lbs>330.0</lbs>
+      </opt>
+  </weight>
+  <weight n="2">
+      <name>upper left Bomb Rail</name>
+      <weight-lb>0</weight-lb>
+      <selected>none</selected>
+      <opt>
+					<name>none</name>
+					<lbs>0</lbs>
+			</opt>
+     	<opt>
+					<name>1000 lbs Bomb</name>
+      		<lbs>1020.0</lbs>
+      </opt>
+      <opt>
+					<name>500 lbs Bomb</name>
+      		<lbs>1020.0</lbs>
+      </opt>
+      <opt>
+					<name>300 lbs Bomb</name>
+      		<lbs>620.0</lbs>
+      </opt>
+      <opt>
+					<name>100 lbs Bomb</name>
+      		<lbs>330.0</lbs>
+      </opt>
+  </weight>
+
+  <weight n="3">
+      <name>upper right Bomb Rail</name>
+      <weight-lb>0</weight-lb>
+      <selected>none</selected>
+      <opt>
+					<name>none</name>
+					<lbs>0</lbs>
+			</opt>
+      <opt>
+					<name>1000 lbs Bomb</name>
+      		<lbs>1020.0</lbs>
+      </opt>
+      <opt>
+					<name>500 lbs Bomb</name>
+      		<lbs>1020.0</lbs>
+      </opt>
+      <opt>
+					<name>300 lbs Bomb</name>
+      		<lbs>620.0</lbs>
+      </opt>
+      <opt>
+					<name>100 lbs Bomb</name>
+      		<lbs>330.0</lbs>
+      </opt>
+  </weight>
+  <weight n="4">
+      <name>outer left Bomb Rail</name>
+      <weight-lb>0</weight-lb>
+      <selected>none</selected>
+      <opt>
+					<name>none</name>
+					<lbs>0</lbs>
+			</opt>
+      <opt>
+					<name>300 lbs Bomb</name>
+      		<lbs>310.0</lbs>
+      </opt>
+      <opt>
+					<name>100 lbs Bomb</name>
+      		<lbs>440.0</lbs>
+      </opt>
+  </weight>
+  <weight n="5">
+      <name>outer right Bomb Rail</name>
+      <weight-lb>0</weight-lb>
+      <selected>none</selected>
+      <opt>
+					<name>none</name>
+					<lbs>0</lbs>
+			</opt>
+      <opt>
+					<name>300 lbs Bomb</name>
+      		<lbs>310.0</lbs>
+      </opt>
+      <opt>
+					<name>100 lbs Bomb</name>
+      		<lbs>440.0</lbs>
+      </opt>
+  </weight>
+
+
+ </sim>
+
+ <!-- set prop for the manual "bookmark" arrow on the remote compas -->
+ <instrumentation>
+    <magnetic-compass>
+       <bookmark-heading-deg type="double">43.0</bookmark-heading-deg>
+    </magnetic-compass>
+ </instrumentation>
+
+ <!-- set up control properties for YASim -->
+ <controls>
+   <doors>
+     <fdoor>
+        <position-norm type="double">0.0</position-norm>
+     </fdoor>
+     <rdoor>
+        <position-norm type="double">0.0</position-norm>
+     </rdoor>
+     <cdoor>
+        <position-norm type="double">0.0</position-norm>
+     </cdoor>
+   </doors>
+   <armament>
+     <trigger type="bool">false</trigger>
+     <pair1 type="bool">false</pair1>
+     <pair2 type="bool">false</pair2>
+     <pair3 type="bool">false</pair3>
+     <pair4 type="bool">false</pair4>
+     <station n="0">
+       <loaded type="bool">true</loaded>
+       <release type="bool">false</release>
+     </station>
+     <station n="1">
+       <loaded type="bool">true</loaded>
+       <release type="bool">false</release>
+     </station>
+     <station n="2">
+       <loaded type="bool">true</loaded>
+       <release type="bool">false</release>
+     </station>
+     <station n="3">
+       <loaded type="bool">true</loaded>
+       <release type="bool">false</release>
+     </station>
+     <station n="4">
+       <loaded type="bool">true</loaded>
+       <release type="bool">false</release>
+     </station>
+     <station n="5">
+       <loaded type="bool">true</loaded>
+       <release type="bool">false</release>
+     </station>
+   </armament>
+   <engines>
+      <engine n="0">
+        <magnetos>3</magnetos>
+        <boost type="double">0.46</boost> <!--0.46-->
+      </engine>
+      <engine n="1">
+        <magnetos>3</magnetos>
+        <boost type="double">0.46</boost> <!--0.46-->
+      </engine>
+   </engines>
+   <fuel>
+     <jett-p type="int">0</jett-p>
+     <jett-s type="int">0</jett-s>
+     <switch-position-port type = "int">0</switch-position-port>
+     <switch-position-starb type = "int">2</switch-position-starb>
+   </fuel>
+   <gear>
+     <tailwheel-lock>true</tailwheel-lock>
+     <rdoor-pos-norm type="float">0.0</rdoor-pos-norm>
+     <cdoor-pos-norm type="float">0.0</cdoor-pos-norm>
+     <fdoor-pos-norm type="float">0.0</fdoor-pos-norm>
+  </gear>
+  <switches>
+    <gun-sight-main type="int">1</gun-sight-main>
+    <gun-sight-stow type="float">0.0</gun-sight-stow>
+    <gun-sight-dimmer type="float">0.0</gun-sight-dimmer>
+  </switches>
+ </controls>
+
+ <engines>
+
+  <engine>
+   <rpm type="double">700</rpm>
+  </engine>
+  <engine>
+   <rpm type="double">700</rpm>
+  </engine>
+ </engines> 
+ <input>
+    <keyboard>
+      <key n="102">
+        <name>f</name>
+        <desc>shift Blower down</desc>
+        <binding n="0"> 
+          <command>nasal</command>
+          <script>b26.shift_blower0_dn()</script>
+        </binding>
+        <binding n="1"> 
+          <command>nasal</command>
+          <script>b26.shift_blower1_dn()</script>
+        </binding>
+      </key>
+
+      <key n="70">
+        <name>F</name>
+        <desc>shift Blower up</desc>
+        <binding n="0">
+          <command>nasal</command>
+          <script>b26.shift_blower0_up()</script>
+        </binding>
+        <binding n="1">
+          <command>nasal</command>
+          <script>b26.shift_blower1_up()</script>
+        </binding>
+      </key>
+      <key n="67">
+        <name>C</name>
+        <desc>Toggle Cockpit door</desc>
+        <binding n="0">
+          <command>nasal</command>
+          <script>beaufighter.toggle_cdoor()</script>
+        </binding>
+      </key>
+      <key n="83">
+        <name>S</name>
+        <desc>Toggle Front-Door</desc>
+        <binding n="0">
+          <command>nasal</command>
+          <script>b-26.toggle_fdoor()</script>
+        </binding>
+      </key>
+      <key n="68">
+        <name>D</name>
+        <desc>Toggle Rear-Door</desc>
+        <binding n="0">
+          <command>nasal</command>
+          <script>b-26.toggle_rdoor()</script>
+        </binding>
+      </key>
+      <key n="109"> 
+        <name>m</name>
+        <desc>Toggle Master Arm on</desc>
+        <binding> 
+          <command>property-adjust</command>
+          <property>/controls/armament/master-arm</property>
+          <step type="double">1</step>
+          <min type="double">0</min>
+          <max type="double">1</max>
+        </binding>
+      </key>
+      <key n="77"> 
+        <name>M</name>
+        <desc>Toggle Master Arm off</desc>
+        <binding> 
+          <command>property-adjust</command>
+          <property>/controls/armament/master-arm</property>
+          <step type="double">-1</step>
+          <min type="double">0</min>
+          <max type="double">1</max>
+        </binding>
+      </key>
+      <key n="101">
+        <name>e</name>
+        <desc>Fire Cannons</desc>
+        <binding>
+          <command>nasal</command>
+          <script>b26.fire_MG()</script>
+        </binding>
+        <mod-up>
+          <binding>
+            <command>nasal</command>
+            <script>b26.stop_MG()</script>
+          </binding>
+        </mod-up>
+      </key>
+
+
+     </keyboard>
+ </input>
+	<nasal>
+		<b26>
+			<file>Aircraft/b26/Nasal/b-26.nas</file>
+		</b26>
+
+	</nasal>
+
+</PropertyList>
+
+
+
+

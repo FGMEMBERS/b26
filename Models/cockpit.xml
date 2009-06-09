@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+
+<!-- B-26 Marauder by Detlef Faber -->
+
+<PropertyList>
+
+ <model>
+  <path>Aircraft/b26/Models/Instruments/jrb-wbd-gyrocompass.xml</path>
+  <offsets>
+   <x-m>2.107</x-m>
+   <y-m>-0.416</y-m>
+   <z-m>0.445</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/b26/Models/Instruments/jrb-wbd-horizon.xml</path>
+  <offsets>
+   <x-m>2.102</x-m>
+   <y-m>-0.274</y-m>
+   <z-m>0.44</z-m>
+  </offsets>
+ </model>
+<model>
+  <path>Aircraft/b26/Models/Instruments/jrb-wbd-alt.xml</path>
+  <offsets>
+   <x-m>2.102</x-m>
+   <y-m>-0.635</y-m>
+   <z-m>0.285</z-m>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/b26/Models/Instruments/jrb-wbd-asi.xml</path>
+  <offsets>
+   <x-m>2.102</x-m>
+   <y-m>-0.532</y-m>
+   <z-m>0.285</z-m>
+  </offsets>
+ </model>
+<model>
+  <path>Aircraft/b26/Models/Instruments/jrb-wbd-turn.xml</path>
+  <offsets>
+   <x-m>2.102</x-m>
+   <y-m>-0.417</y-m>
+   <z-m>0.285</z-m>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/b26/Models/Instruments/jrb-wbd-vsi.xml</path>
+  <offsets>
+   <x-m>2.102</x-m>
+   <y-m>-0.274</y-m>
+   <z-m>0.285</z-m>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/b26/Models/Instruments/jrb-wbd-clock.xml</path>
+  <offsets>
+   <x-m>2.102</x-m>
+   <y-m>-0.368</y-m>
+   <z-m>0.184</z-m>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/b26/Models/Instruments/jrb-wbd-mp-left.xml</path>
+  <offsets>
+   <x-m>2.102</x-m>
+   <y-m>-0.143</y-m>
+   <z-m>0.4975</z-m>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/b26/Models/Instruments/jrb-wbd-rpm-left.xml</path>
+  <offsets>
+   <x-m>2.102</x-m>
+   <y-m>-0.028</y-m>
+   <z-m>0.4975</z-m>
+  </offsets>
+ </model>
+<!-- oil pressure
+ <model>
+  <path>Aircraft/b29/Instruments/jrb-wbd-rpm-left.xml</path>
+  <offsets>
+   <x-m>2.102</x-m>
+   <y-m>-0.143</y-m>
+   <z-m>0.385</z-m>
+  </offsets>
+ </model>
+-->
+ <model>
+  <path>Aircraft/b26/Models/Instruments/jrb-wbd-pdi.xml</path>
+  <offsets>
+   <x-m>2.102</x-m>
+   <y-m>-0.528</y-m>
+   <z-m>0.4</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/b26/Models/Instruments/jrb-wbd-radio-compass.xml</path>
+  <offsets>
+   <x-m>2.102</x-m>
+   <y-m>0.083</y-m>
+   <z-m>0.266</z-m>
+  </offsets>
+ </model>
+
+</PropertyList>
