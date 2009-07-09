@@ -167,12 +167,12 @@ YASim aerodynamic model for a B-26 Marauder
 
 
 
-<tank x="-7.3" y="0.34" z="-0.19" capacity="545"/> 
-<tank x="-7.3" y="1.35" z="-0.08" capacity="273"/> 
+<tank x="-7.2" y="0.34" z="-0.19" capacity="2135"/> 
+<tank x="-7.3" y="1.35" z="-0.08" capacity="727"/> 
 
 
-<tank x="-7.3" y="-0.34" z="-0.19" capacity="545"/> 
-<tank x="-7.3" y="-1.35" z="-0.08" capacity="273"/> 
+<tank x="-7.2" y="-0.34" z="-0.19" capacity="2135"/> 
+<tank x="-7.3" y="-1.35" z="-0.08" capacity="727"/> 
 <!--
 <tank x="-7.4" y="-1.35" z="-0.08" capacity="273"/> 
 -->

@@ -40,7 +40,7 @@
   <object-name>interiour</object-name>
 		<type>range</type>
 		<min-m>0</min-m>
-		<max-m>70</max-m>
+		<max-m>30</max-m>
 	</animation>
 
  <model>
@@ -68,7 +68,7 @@
   <object-name>prop.L</object-name>
   <condition>
    <less-than>
-    <property>/engines/engine[0]/rpm</property>
+    <property>engines/engine[0]/rpm</property>
     <value>1000</value>
    </less-than>
   </condition>
@@ -77,7 +77,7 @@
  <animation>
   <type>spin</type>
   <object-name>prop.L</object-name>
-  <property>/engines/engine[0]/rpm</property>
+  <property>engines/engine[0]/rpm</property>
   <factor>0.479</factor>
   <center>
    <x-m>-3.786</x-m>
@@ -93,7 +93,7 @@
  <animation>
   <type>spin</type>
   <object-name>prophub.L</object-name>
-  <property>/engines/engine[0]/rpm</property>
+  <property>engines/engine[0]/rpm</property>
   <factor>0.479</factor>
   <center>
    <x-m>-3.786</x-m>
@@ -120,7 +120,7 @@
   <object-name>prop.R</object-name>
   <condition>
    <less-than>
-    <property>/engines/engine[1]/rpm</property>
+    <property>engines/engine[1]/rpm</property>
     <value>1000</value>
    </less-than>
   </condition>
@@ -129,7 +129,7 @@
  <animation>
   <type>spin</type>
   <object-name>prop.R</object-name>
-  <property>/engines/engine[1]/rpm</property>
+  <property>engines/engine[1]/rpm</property>
   <factor>0.479</factor>
   <center>
    <x-m>-3.786</x-m>
@@ -145,7 +145,7 @@
  <animation>
   <type>spin</type>
   <object-name>prophub.R</object-name>
-  <property>/engines/engine[1]/rpm</property>
+  <property>engines/engine[1]/rpm</property>
   <factor>0.479</factor>
   <center>
    <x-m>-3.786</x-m>
@@ -166,7 +166,7 @@
   <object-name>gearleg.F</object-name>
   <object-name>wheel.F</object-name>
   <object-name>wheel2.F</object-name>
-  <property>/gear/gear[0]/position-norm</property>
+  <property>gear/gear[0]/position-norm</property>
   <interpolation>
    <entry>
     <ind>0.0</ind>
@@ -196,7 +196,7 @@
   <type>rotate</type>
   <object-name>wheel.F</object-name>
   <object-name>wheel2.F</object-name>
-  <property>/gear/gear[0]/position-norm</property>
+  <property>gear/gear[0]/position-norm</property>
   <interpolation>
    <entry>
     <ind>0.0</ind>
@@ -226,7 +226,7 @@
 <animation>
   <type>rotate</type>
   <object-name>geardoorF.L</object-name>
-  <property>/gear/gear[0]/position-norm</property>
+  <property>gear/gear[0]/position-norm</property>
   <interpolation>
    <entry>
     <ind>0.0</ind>
@@ -258,7 +258,7 @@
 <animation>
   <type>rotate</type>
   <object-name>geardoorF.R</object-name>
-  <property>/gear/gear[0]/position-norm</property>
+  <property>gear/gear[0]/position-norm</property>
   <interpolation>
    <entry>
     <ind>0.0</ind>
@@ -294,7 +294,7 @@
   <object-name>gearleg.L</object-name>
   <object-name>wheel.L</object-name>
   <object-name>wheel2.L</object-name>
-  <property>/gear/gear[1]/position-norm</property>
+  <property>gear/gear[1]/position-norm</property>
   <interpolation>
 <entry>
     <ind>0.0</ind>
@@ -332,7 +332,7 @@
   <object-name>wheel.R</object-name>
   <object-name>wheel2.R</object-name>
 
-  <property>/gear/gear[2]/position-norm</property>
+  <property>gear/gear[2]/position-norm</property>
   <interpolation>
 <entry>
     <ind>0.0</ind>
@@ -364,7 +364,7 @@
  <animation>
   <type>rotate</type>
   <object-name>geardoor2.L</object-name>
-  <property>/gear/gear[1]/position-norm</property>
+  <property>gear/gear[1]/position-norm</property>
   <interpolation>
    <entry>
     <ind>0.0</ind>
@@ -396,7 +396,7 @@
  <animation>
   <type>rotate</type>
   <object-name>geardoor1.L</object-name>
-  <property>/gear/gear[1]/position-norm</property>
+  <property>gear/gear[1]/position-norm</property>
   <interpolation>
    <entry>
     <ind>0.0</ind>
@@ -429,7 +429,7 @@
  <animation>
   <type>rotate</type>
   <object-name>geardoor2.R</object-name>
-  <property>/gear/gear[2]/position-norm</property>
+  <property>gear/gear[2]/position-norm</property>
   <interpolation>
    <entry>
     <ind>0.0</ind>
@@ -461,7 +461,7 @@
  <animation>
   <type>rotate</type>
   <object-name>geardoor1.R</object-name>
-  <property>/gear/gear[2]/position-norm</property>
+  <property>gear/gear[2]/position-norm</property>
   <interpolation>
    <entry>
     <ind>0.0</ind>
@@ -547,7 +547,7 @@
   <type>rotate</type>
   <object-name>outflap.L</object-name>
   <object-name>inflap.L</object-name>
-  <property>/surface-positions/flap-pos-norm</property>
+  <property>surface-positions/flap-pos-norm</property>
   <factor>-37.0</factor>
 
   <center>
@@ -569,7 +569,7 @@
   <type>rotate</type>
   <object-name>outflap.R</object-name>
   <object-name>inflap.R</object-name>
-  <property>/surface-positions/flap-pos-norm</property>
+  <property>surface-positions/flap-pos-norm</property>
   <factor>37.0</factor>
 
   <center>
@@ -592,7 +592,7 @@
  <animation>
   <type>rotate</type>
   <object-name>aileron.L</object-name>
-  <property>/controls/flight/aileron</property>
+  <property>controls/flight/aileron</property>
   <factor>-30.0</factor>
 
   <center>
@@ -613,7 +613,7 @@
  <animation>
   <type>rotate</type>
   <object-name>aileron.R</object-name>
-  <property>/controls/flight/aileron</property>
+  <property>controls/flight/aileron</property>
   <factor>-30.0</factor>
 
   <center>
@@ -636,7 +636,7 @@
  <animation>
   <type>rotate</type>
   <object-name>rudder</object-name>
-  <property>/surface-positions/rudder-pos-norm</property>
+  <property>surface-positions/rudder-pos-norm</property>
   <factor>-30.0</factor>
 
   <center>
@@ -658,7 +658,7 @@
  <animation>
   <type>rotate</type>
   <object-name>elevator.L</object-name>
-  <property>/surface-positions/elevator-pos-norm</property>
+  <property>surface-positions/elevator-pos-norm</property>
   <interpolation>
    <entry>
     <ind>-1.0</ind>
@@ -691,7 +691,7 @@
  <animation>
   <type>rotate</type>
   <object-name>elevator.R</object-name>
-  <property>/surface-positions/elevator-pos-norm</property>
+  <property>surface-positions/elevator-pos-norm</property>
   <interpolation>
    <entry>
     <ind>-1.0</ind>
@@ -726,7 +726,7 @@
   <type>rotate</type>
   <object-name>bombbay2.L</object-name>
   <object-name>bombbay1.L</object-name>
-  <property>/controls/armament/bombbay/position-norm</property>
+  <property>controls/armament/bombbay/position-norm</property>
   <factor>-120.0</factor>
 
   <center>
@@ -749,7 +749,7 @@
   <type>rotate</type>
 
   <object-name>bombbay1.L</object-name>
-  <property>/controls/armament/bombbay/position-norm</property>
+  <property>controls/armament/bombbay/position-norm</property>
   <factor>-130.0</factor>
 
   <center>
@@ -771,7 +771,7 @@
   <type>rotate</type>
   <object-name>bombbay2.R</object-name>
   <object-name>bombbay1.R</object-name>
-  <property>/controls/armament/bombbay/position-norm</property>
+  <property>controls/armament/bombbay/position-norm</property>
   <factor>120.0</factor>
 
   <center>
@@ -794,7 +794,7 @@
   <type>rotate</type>
 
   <object-name>bombbay1.R</object-name>
-  <property>/controls/armament/bombbay/position-norm</property>
+  <property>controls/armament/bombbay/position-norm</property>
   <factor>130.0</factor>
 
   <center>
@@ -814,80 +814,7 @@
  </animation>
 
 
-<!-- crew -->
-    <model> 
-      <path>Aircraft/mosquito/Models/pilot.xml</path>
-	  <name>pilot</name>
-      <offsets> 
-        <x-m>2.9</x-m>
-        <y-m>-0.38</y-m>
-        <z-m>0.135</z-m>
-        <pitch-deg>14</pitch-deg>
-      </offsets>
-    </model>
- <animation>
-  <type>select</type>
-  <object-name>pilot</object-name>
-  <condition>
-   <greater-than>
-    <property>/sim/model/crew/pilot/visible</property>
-    <value>0.0</value>
-   </greater-than>
-  </condition>
- </animation>
 
-    <model> 
-      <path>Aircraft/mosquito/Models/crew.xml</path>
-	  <name>crew</name>
-      <offsets> 
-        <x-m>2.9</x-m>
-        <y-m>0.38</y-m>
-        <z-m>0.14</z-m>
-        <pitch-deg>14</pitch-deg>
-      </offsets>
-    </model>
- <animation>
-  <type>select</type>
-  <object-name>crew</object-name>
-  <condition>
-   <less-than>
-    <property>/sim/current-view/view-number</property>
-    <value>6.0</value>
-   </less-than>
-  </condition>
- </animation>
-    <model> 
-      <path>Aircraft/b26/Models/Interiour/nosegun.xml</path>
-	  <name>nosegun</name>
-      <offsets> 
-        <x-m>0.06</x-m>
-        <y-m>0.0</y-m>
-        <z-m>-0.27</z-m>
-        <pitch-deg>0</pitch-deg>
-      </offsets>
-    </model>
-    <model> 
-      <path>Aircraft/b26/Models/Interiour/turretgun.xml</path>
-	  <name>turretgun</name>
-      <offsets> 
-        <x-m>12.05</x-m>
-        <y-m>0.0</y-m>
-        <z-m>1.0</z-m>
-        <pitch-deg>0</pitch-deg>
-				<heading-deg>180</heading-deg>
-      </offsets>
-    </model>
-
- <animation>
-  <type>select</type>
-  <object-name>pilot</object-name>
-  <condition>
-   <greater-than>
-    <property>/sim/current-view/view-number</property>
-    <value>0.0</value>
-   </greater-than>
-  </condition>
- </animation>
 
 	<animation>
 		<type>shader</type>

@@ -2,8 +2,97 @@
 
 <PropertyList>
 		<path>interiour.ac</path>
+<!-- crew -->
+    <model> 
+      <path>Aircraft/mosquito/Models/pilot.xml</path>
+	  <name>pilot</name>
+      <offsets> 
+        <x-m>2.9</x-m>
+        <y-m>-0.38</y-m>
+        <z-m>0.135</z-m>
+        <pitch-deg>14</pitch-deg>
+      </offsets>
+    </model>
+ <animation>
+  <type>select</type>
+  <object-name>pilot</object-name>
+  <condition>
+   <greater-than>
+    <property>/sim/model/crew/pilot/visible</property>
+    <value>0.0</value>
+   </greater-than>
+  </condition>
+ </animation>
 
+    <model> 
+      <path>Aircraft/mosquito/Models/crew.xml</path>
+	  <name>crew</name>
+      <offsets> 
+        <x-m>2.9</x-m>
+        <y-m>0.38</y-m>
+        <z-m>0.14</z-m>
+        <pitch-deg>14</pitch-deg>
+      </offsets>
+    </model>
+ <animation>
+  <type>select</type>
+  <object-name>crew</object-name>
+  <condition>
+   <less-than>
+    <property>/sim/current-view/view-number</property>
+    <value>6.0</value>
+   </less-than>
+  </condition>
+ </animation>
+ <model>
+	<name>pilot chair</name>
+  <path>Aircraft/b26/Models/Interiour/chair.ac</path>
+  <offsets>
+   <x-m>3.05</x-m>
+   <y-m>-0.4</y-m>
+   <z-m>-0.2</z-m>
+  </offsets>
+ </model>
+ <model>
+	<name>copilot chair</name>
+  <path>Aircraft/b26/Models/Interiour/chair.ac</path>
+  <offsets>
+   <x-m>3.05</x-m>
+   <y-m>0.52</y-m>
+   <z-m>-0.2</z-m>
+  </offsets>
+ </model>
+    <model> 
+      <path>Aircraft/b26/Models/Interiour/nosegun.xml</path>
+	  <name>nosegun</name>
+      <offsets> 
+        <x-m>0.06</x-m>
+        <y-m>0.0</y-m>
+        <z-m>-0.27</z-m>
+        <pitch-deg>0</pitch-deg>
+      </offsets>
+    </model>
+    <model> 
+      <path>Aircraft/b26/Models/Interiour/turretgun.xml</path>
+	  <name>turretgun</name>
+      <offsets> 
+        <x-m>12.05</x-m>
+        <y-m>0.0</y-m>
+        <z-m>1.0</z-m>
+        <pitch-deg>0</pitch-deg>
+				<heading-deg>180</heading-deg>
+      </offsets>
+    </model>
 
-
+ <animation>
+  <type>select</type>
+  <object-name>pilot</object-name>
+  <condition>
+   <greater-than>
+    <property>/sim/current-view/view-number</property>
+    <value>0.0</value>
+   </greater-than>
+  </condition>
+ </animation>
 
 </PropertyList>
