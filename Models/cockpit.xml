@@ -5,7 +5,7 @@
 <PropertyList>
 
  <model>
-  <path>Aircraft/b26/Models/Instruments/jrb-wbd-gyrocompass.xml</path>
+  <path>Aircraft/b26/Models/Instruments/gyro-us.xml</path>
   <offsets>
    <x-m>2.107</x-m>
    <y-m>-0.416</y-m>
@@ -14,7 +14,7 @@
  </model>
 
  <model>
-  <path>Aircraft/b26/Models/Instruments/jrb-wbd-horizon.xml</path>
+  <path>Aircraft/b26/Models/Instruments/att-us.xml</path>
   <offsets>
    <x-m>2.102</x-m>
    <y-m>-0.274</y-m>
@@ -22,7 +22,7 @@
   </offsets>
  </model>
 <model>
-  <path>Aircraft/b26/Models/Instruments/jrb-wbd-alt.xml</path>
+  <path>Aircraft/b26/Models/Instruments/alt-us.xml</path>
   <offsets>
    <x-m>2.102</x-m>
    <y-m>-0.635</y-m>
@@ -30,7 +30,7 @@
   </offsets>
  </model>
  <model>
-  <path>Aircraft/b26/Models/Instruments/jrb-wbd-asi.xml</path>
+  <path>Aircraft/b26/Models/Instruments/asi500-us.xml</path>
   <offsets>
    <x-m>2.102</x-m>
    <y-m>-0.532</y-m>
@@ -38,7 +38,7 @@
   </offsets>
  </model>
 <model>
-  <path>Aircraft/b26/Models/Instruments/jrb-wbd-turn.xml</path>
+  <path>Aircraft/b26/Models/Instruments/turn-us.xml</path>
   <offsets>
    <x-m>2.102</x-m>
    <y-m>-0.417</y-m>
@@ -46,13 +46,14 @@
   </offsets>
  </model>
  <model>
-  <path>Aircraft/b26/Models/Instruments/jrb-wbd-vsi.xml</path>
+  <path>Aircraft/b26/Models/Instruments/vsi6-us.xml</path>
   <offsets>
    <x-m>2.102</x-m>
    <y-m>-0.274</y-m>
    <z-m>0.285</z-m>
   </offsets>
  </model>
+<!--
  <model>
   <path>Aircraft/b26/Models/Instruments/jrb-wbd-clock.xml</path>
   <offsets>
@@ -61,32 +62,64 @@
    <z-m>0.184</z-m>
   </offsets>
  </model>
- <model>
-  <path>Aircraft/b26/Models/Instruments/jrb-wbd-mp-left.xml</path>
-  <offsets>
-   <x-m>2.102</x-m>
-   <y-m>-0.143</y-m>
-   <z-m>0.4975</z-m>
-  </offsets>
- </model>
- <model>
-  <path>Aircraft/b26/Models/Instruments/jrb-wbd-rpm-left.xml</path>
-  <offsets>
-   <x-m>2.102</x-m>
-   <y-m>-0.028</y-m>
-   <z-m>0.4975</z-m>
-  </offsets>
- </model>
-<!-- oil pressure
- <model>
-  <path>Aircraft/b29/Instruments/jrb-wbd-rpm-left.xml</path>
-  <offsets>
-   <x-m>2.102</x-m>
-   <y-m>-0.143</y-m>
-   <z-m>0.385</z-m>
-  </offsets>
- </model>
 -->
+ <model>
+  <path>Aircraft/b26/Models/Instruments/mpmulti60-us.xml</path>
+  <offsets>
+   <x-m>2.102</x-m>
+   <y-m>-0.143</y-m>
+   <z-m>0.4975</z-m>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/b26/Models/Instruments/oilp200-us.xml</path>
+  <offsets>
+   <x-m>2.102</x-m>
+   <y-m>-0.143</y-m>
+   <z-m>0.39</z-m>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/b26/Models/Instruments/cyltemp-us.xml</path>
+  <offsets>
+   <x-m>2.102</x-m>
+   <y-m>-0.143</y-m>
+   <z-m>0.285</z-m>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/b26/Models/Instruments/rpmmulti45-us.xml</path>
+  <offsets>
+   <x-m>2.102</x-m>
+   <y-m>-0.03</y-m>
+   <z-m>0.4975</z-m>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/b26/Models/Instruments/oiltempmulti-us.xml</path>
+  <offsets>
+   <x-m>2.102</x-m>
+   <y-m>-0.03</y-m>
+   <z-m>0.39</z-m>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/b26/Models/Instruments/fuelpress.xml</path>
+  <offsets>
+   <x-m>2.102</x-m>
+   <y-m>0.08</y-m>
+   <z-m>0.4975</z-m>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/b26/Models/Instruments/fuelcont-us.xml</path>
+  <offsets>
+   <x-m>2.105</x-m>
+   <y-m>0.19</y-m>
+   <z-m>0.42</z-m>
+  </offsets>
+ </model>
+<!--
  <model>
   <path>Aircraft/b26/Models/Instruments/jrb-wbd-pdi.xml</path>
   <offsets>
@@ -95,9 +128,9 @@
    <z-m>0.4</z-m>
   </offsets>
  </model>
-
+-->
  <model>
-  <path>Aircraft/b26/Models/Instruments/jrb-wbd-radio-compass.xml</path>
+  <path>Aircraft/b26/Models/Instruments/radiocompass-us.xml</path>
   <offsets>
    <x-m>2.102</x-m>
    <y-m>0.083</y-m>

@@ -28,12 +28,12 @@ don@sol2500.net
   <sound>
    <path>Aircraft/p51d/p51d-sound.xml</path>
   </sound>
-<!--
+
   <submodels> 
     <serviceable type="bool">true</serviceable>
-    <path>Aircraft/beaufighter/Models/submodels.xml</path>
+    <path>Aircraft/b26/Models/submodels.xml</path>
   </submodels>
--->
+
   <panel>
   <path>Aircraft/Generic/Panels/generic-vfr-panel.xml</path>
   <visibility>false</visibility>
