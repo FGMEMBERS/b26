@@ -33,7 +33,9 @@ don@sol2500.net
     <serviceable type="bool">true</serviceable>
     <path>Aircraft/b26/Models/submodels.xml</path>
   </submodels>
-
+    <startup>
+      <splash-texture>Aircraft/b26/splash-1.png</splash-texture>
+    </startup>
   <panel>
   <path>Aircraft/Generic/Panels/generic-vfr-panel.xml</path>
   <visibility>false</visibility>
