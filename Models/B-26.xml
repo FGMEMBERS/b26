@@ -16,6 +16,24 @@
       update.stop();
     </unload>
   </nasal>
+<!--
+   <effect>
+ 			<inherits-from>Aircraft/b26/Models/Effects/b26_bumpspec</inherits-from>
+  	  <object-name>fuselage</object-name>
+ 			<object-name>wing.L</object-name>
+  		<object-name>wing.R</object-name>
+
+
+    <object-name>flap1.L</object-name>
+    <object-name>flap1.R</object-name>
+    <object-name>flap2.L</object-name>
+    <object-name>flap2.R</object-name>
+    <object-name>coolflap.L</object-name>
+    <object-name>coolflap.R</object-name>
+
+
+    </effect>
+-->
 
  <model>
 	<name>cockpit</name>

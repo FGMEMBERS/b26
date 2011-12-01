@@ -60,7 +60,7 @@ don@sol2500.net
    <config>
     <x-offset-m archive="y" type="double">-0.4</x-offset-m>
     <y-offset-m archive="y" type="double">0.8</y-offset-m>
-    <z-offset-m archive="y" type="double">2.9</z-offset-m>
+    <z-offset-m archive="y" type="double">3.1</z-offset-m>
     <pitch-offset-deg>-17.5</pitch-offset-deg>
    </config>
   </view>
@@ -470,7 +470,9 @@ Reduce Speed to 160 mph, drop Gear and Flaps. approach at 140 mph and do not fla
       </opt>
   </weight>
 
-
+    <rendering>
+  		 <refl_correction type="float">-0.15</refl_correction>
+    </rendering>
  </sim>
 
  <!-- set prop for the manual "bookmark" arrow on the remote compas -->
