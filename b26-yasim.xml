@@ -111,6 +111,7 @@ YASim aerodynamic model for a B-26 Marauder
     <control-input axis="/controls/engines/engine[0]/magnetos" control="MAGNETOS"/>
     <control-input axis="/controls/engines/engine[0]/mixture" control="MIXTURE"/>
     <control-input axis="/controls/engines/engine[0]/boost" control="BOOST"/>
+		<control-input axis="/controls/engines/engine[0]/propeller-feather" control="PROPFEATHER"/>
   </piston-engine>
 
 
@@ -135,6 +136,7 @@ YASim aerodynamic model for a B-26 Marauder
     <control-input axis="/controls/engines/engine[1]/magnetos" control="MAGNETOS"/>
     <control-input axis="/controls/engines/engine[1]/mixture" control="MIXTURE"/>
     <control-input axis="/controls/engines/engine[1]/boost" control="BOOST"/>
+		<control-input axis="/controls/engines/engine[1]/propeller-feather" control="PROPFEATHER"/>
   </piston-engine>
 
 

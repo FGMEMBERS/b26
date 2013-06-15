@@ -17,7 +17,13 @@ don@sol2500.net
 
   <description>B-26 Marauder</description>
   <author>Detlef Faber</author>
-  <status>beta</status>
+  <status>pre-production</status>
+  <rating>
+    <FDM type="int">3</FDM>
+    <systems type="int">3</systems>
+    <model type="int">4</model>
+    <cockpit type="int">3</cockpit>
+  </rating>
   <flight-model>yasim</flight-model>
   <aero>b26-yasim</aero>
   <fuel-fraction>1.0</fuel-fraction>
@@ -99,6 +105,11 @@ don@sol2500.net
     <target-z-offset-m archive="y" type="double">6.0</target-z-offset-m>
    </config>
   </view>
+  <view n="7">
+   <config>
+    <target-z-offset-m archive="y" type="double">6.0</target-z-offset-m>
+   </config>
+  </view>
 
   <view n="100">
    <name>Walk View</name>
@@ -119,6 +130,8 @@ don@sol2500.net
     </config>
   </view>
   <view n="101">
+   <enabled type="bool"
+			userarchive="n">false</enabled>
    <name>Nose Gun</name>
     <type>lookat</type>
     <config>
@@ -163,6 +176,7 @@ don@sol2500.net
     </config>
   </view>
   <view n="102">
+   <enabled type="bool">false</enabled>
    <name>Turret</name>
     <type>lookat</type>
     <config>
@@ -190,6 +204,7 @@ don@sol2500.net
     </config>
   </view>
   <view n="103">
+   <enabled type="bool">false</enabled>
    <name>rear Gun</name>
     <type>lookat</type>
     <config>
@@ -217,6 +232,7 @@ don@sol2500.net
     </config>
   </view>
   <view n="104">
+   <enabled type="bool">false</enabled>
    <name>left Waist Gun</name>
     <type>lookat</type>
     <config>

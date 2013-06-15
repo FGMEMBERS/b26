@@ -844,8 +844,34 @@
   </axis>
  </animation>
 
+  <model>
+    <name>light.L</name>
+    <path>Aircraft/b26/Models/Effects/contrail.xml</path>
+    <offsets>
+   <x-m>6.2</x-m>
+   <y-m>-3.294</y-m>
+   <z-m>0.181</z-m>
+    </offsets>
+  </model>
 
-
+  <model>
+    <name>contrail.L</name>
+    <path>Aircraft/b26/Models/Effects/light.xml</path>
+    <offsets>
+   <x-m>30.0</x-m>
+   <y-m>-6.34</y-m>
+   <z-m>0.85</z-m>
+    </offsets>
+  </model>
+ <model>
+    <name>contrail.R</name>
+    <path>Aircraft/b26/Models/Effects/contrail.xml</path>
+    <offsets>
+   <x-m>30.0</x-m>
+   <y-m>3.294</y-m>
+   <z-m>0.181</z-m>
+    </offsets>
+  </model>	
 
 	<animation>
 		<type>shader</type>
