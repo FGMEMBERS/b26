@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+
+  <submodel>
+    <name>1000lbs L1</name>
+    <model>Aircraft/b26/Models/Loads/1000lbs.ac</model>
+    <trigger>controls/armament/station[0]/release</trigger>
+    <speed>0</speed>
+    <repeat>false</repeat>
+    <count>1</count>
+    <x-offset>-24.5</x-offset>
+    <y-offset>-1.52</y-offset>
+    <z-offset>-1.69</z-offset>
+    <pitch-offset>0.0</pitch-offset>
+    <yaw-offset>0.0</yaw-offset>
+    <life>30</life>
+    <contents>sim/weight[0]/weight-lb</contents>
+    <aero-stabilised>true</aero-stabilised>
+    <wind>false</wind>
+    <weight>1000</weight>
+    <eda>1.7</eda>
+    <cd>1.7</cd>
+		<impact>true</impact>
+		<impact-reports>ai/models/model-impact</impact-reports>
+		<submodel-path>Aircraft/b26/Models/subsubmodels.xml</submodel-path>
+  </submodel>
+
+  <submodel>
+    <name>1000lbs R1</name>
+    <model>Aircraft/b26/Models/Loads/1000lbs.ac</model>
+    <trigger>controls/armament/station[1]/release</trigger>
+    <speed>0</speed>
+    <repeat>false</repeat>
+    <count>1</count>
+    <x-offset>-24.5</x-offset>
+    <y-offset>1.52</y-offset>
+    <z-offset>-1.69</z-offset>
+    <pitch-offset>0.0</pitch-offset>
+    <yaw-offset>0.0</yaw-offset>
+    <life>30</life>
+    <contents>sim/weight[1]/weight-lb</contents>
+    <aero-stabilised>true</aero-stabilised>
+    <wind>false</wind>
+    <weight>1000</weight>
+    <eda>1.7</eda>
+    <cd>1.7</cd>
+		<impact>true</impact>
+		<impact-reports>ai/models/model-impact</impact-reports>
+		<submodel-path>Aircraft/b26/Models/subsubmodels.xml</submodel-path>
+  </submodel>
+
+</PropertyList>

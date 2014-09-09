@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+    <model> 
+      <path>Aircraft/b26/Models/Interiour/browning50air.ac</path>
+	  <name>leftgun</name>
+      <offsets> 
+        <x-m>0.0</x-m>
+        <y-m>0.2</y-m>
+        <z-m>0.0</z-m>
+        <pitch-deg>0</pitch-deg>
+      </offsets>
+    </model>
+    <model> 
+      <path>Aircraft/b26/Models/Interiour/browning50air.ac</path>
+	  <name>rightgun</name>
+      <offsets> 
+        <x-m>0.0</x-m>
+        <y-m>-0.2</y-m>
+        <z-m>0.0</z-m>
+        <pitch-deg>0</pitch-deg>
+      </offsets>
+    </model>
+
+
+
+
+</PropertyList>

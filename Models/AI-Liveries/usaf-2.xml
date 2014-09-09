@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">USAF green</name>
+
+            <texture>AI-Liveries/b26-1b.png</texture>
+
+        </livery>
+    </model>
+</sim>
+</PropertyList>
