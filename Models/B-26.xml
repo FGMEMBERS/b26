@@ -86,7 +86,7 @@
 
   <model>
     <name>pdiskL</name>
-    <path>Aircraft/mosquito/Models/pdiskL.xml</path>
+    <path>Aircraft/b26/Models/pdiskL.xml</path>
     <offsets>
    <x-m>3.66</x-m>
    <y-m>-3.294</y-m>
@@ -139,7 +139,7 @@
  </animation>
   <model>
     <name>pdiskL</name>
-    <path>Aircraft/mosquito/Models/pdiskR.xml</path>
+    <path>Aircraft/b26/Models/pdiskR.xml</path>
     <offsets>
    <x-m>3.66</x-m>
    <y-m>3.294</y-m>
