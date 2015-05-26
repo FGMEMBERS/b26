@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<!-- B-26 Marauder by Detlef Faber -->
+<!-- b26 Marauder by Detlef Faber -->
 
 <PropertyList>
 
@@ -876,7 +876,7 @@
 	<animation>
 		<type>shader</type>
 		<shader>chrome</shader>
-		<texture>Aircraft/B-26/Models/glass_shader.png</texture>
+		<texture>Aircraft/b26/Models/glass_shader.png</texture>
 		<object-name>noseglass</object-name>
 		<object-name>cockpitglass</object-name>
 		<object-name>turretglass</object-name>
