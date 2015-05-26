@@ -32,7 +32,7 @@ don@sol2500.net
   <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
 
   <sound>
-   <path>Aircraft/p51d/p51d-sound.xml</path>
+   <path>Aircraft/b26/b26-sound.xml</path>
   </sound>
 
   <submodels> 
