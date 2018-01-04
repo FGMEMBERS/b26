@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!-- 
+Internal Map:
+
+The Map is a set of rectangular sectors which define the Area that is accessible by the walker. 
+x0-m is the forward edge, x1-m is the rear edge. y0-m is right, y1-m is left. z1-m is the floor level, z0-m is the heigth. 
+Doorways are sectors too, but they are only passable when the specified property is 1 (e.g. the door is open).
+
+Sectors can have types, e.g. Stairways or sloped sectors can have type 1 or 2, which means they are sloped in x or y direction
+
+
+When creating the Map, ensure that x0-m, y0-m and z0-m values are the numeric greater ones. Remember -1 is greater than -2.
+
+Left, below, forward from Origin is negative, right, up, rear is positive.
+
+Sector types:
+  1 - sloped in x direction
+  2 - sloped in y direction
+  3 - trap door/portal, needs <target> to specify the index of the target sector
+  4 - elevator, needs <target> to specify the index of the target sector and <pos-norm> to know where the elevator floor is
+-->
+
+<PropertyList>
+  <start>
+    <x-m>4.0</x-m>
+    <y-m>0.0</y-m>
+    <z-m>-0.8</z-m>
+  </start>
+<!--
+  <sector>
+    <name>Gearwell Door</name>
+    <x0-m >3.8</x0-m>
+    <x1-m>3.6</x1-m>
+    <y0-m>-0.1</y0-m>
+    <y1-m>-0.1</y1-m>
+    <z0-m>-0.8</z0-m>
+    <z1-m>-0.2</z1-m>
+    <exit>0</exit>
+    <property>controls/doors/door0/position-norm</property>
+  </sector>
+-->
+  <sector>
+    <name>Radioroom1</name>
+    <x0-m>5.6</x0-m>
+    <x1-m>3.8</x1-m>
+    <y0-m>0.5</y0-m>
+    <y1-m>-0.5</y1-m>
+    <z0-m>-0.8</z0-m>
+    <z1-m>-0.8</z1-m>
+  </sector>
+
+
+  <sector>
+    <name>Forward Bombbaydoor</name>
+    <type>1</type>
+    <x0-m >5.9</x0-m>
+    <x1-m>5.6</x1-m>
+    <y0-m>0.1</y0-m>
+    <y1-m>-0.1</y1-m>
+    <z0-m>-0.8</z0-m>
+    <z1-m>-1.2</z1-m>
+<!--
+
+    <exit>0</exit>
+    <property>controls/doors/door1/position-norm</property>
+-->
+  </sector>
+
+  <sector>
+    <name>Forward Bombbay</name>
+    <x0-m>8.7</x0-m>
+    <x1-m>5.9</x1-m>
+    <y0-m>0.1</y0-m>
+    <y1-m>-0.1</y1-m>
+    <z0-m>-1.2</z0-m>
+    <z1-m>-1.2</z1-m>
+
+  </sector>
+
+
+</PropertyList>

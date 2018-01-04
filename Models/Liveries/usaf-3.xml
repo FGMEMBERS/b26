@@ -2,12 +2,12 @@
 
 <PropertyList>
 <sim>
-    <model>
-        <livery>
-            <name type="string">USAF bare alu</name>
-
-            <texture>Liveries/b26-1c.png</texture>
-
+  <model>
+    <livery>
+      <name type="string">USAF bare alu</name>
+      <texture>Liveries/b26-1c.png</texture>
+      <refl_correction>-0.25</refl_correction>
+      <amb_correction>-0.15</amb_correction>
         </livery>
     </model>
 </sim>

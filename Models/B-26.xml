@@ -16,24 +16,117 @@
       update.stop();
     </unload>
   </nasal>
-<!--
-   <effect>
- 			<inherits-from>Aircraft/b26/Models/Effects/b26_bumpspec</inherits-from>
-  	  <object-name>fuselage</object-name>
- 			<object-name>wing.L</object-name>
-  		<object-name>wing.R</object-name>
-
-
-    <object-name>flap1.L</object-name>
-    <object-name>flap1.R</object-name>
+  <effect>
+    <inherits-from>Aircraft/b26/Models/Effects/b26_bumpspec</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>nosecone.mil</object-name>
+    <object-name>wing.L</object-name>
+    <object-name>wing.R</object-name>
+    <object-name>engine.R</object-name>
+    <object-name>engine.L</object-name>
+    <object-name>nacelle.R</object-name>
+    <object-name>nacelle.L</object-name>
+    <object-name>hatch.R</object-name>
+    <object-name>hatch.L</object-name>
+    <object-name>aileron.L</object-name>
+    <object-name>aileron.R</object-name>
+    <object-name>outflap.L</object-name>
+    <object-name>outflap.R</object-name>
+    <object-name>inflap.L</object-name>
+    <object-name>inflap.R</object-name>
+    <object-name>coolflap.RR</object-name>
+    <object-name>coolflap.LL</object-name>
+    <object-name>guns.R</object-name>
+    <object-name>guns.L</object-name>
+    <object-name>skydome.R</object-name>
+    <object-name>skydome.L</object-name>
     <object-name>flap2.L</object-name>
     <object-name>flap2.R</object-name>
-    <object-name>coolflap.L</object-name>
-    <object-name>coolflap.R</object-name>
-
-
+    <object-name>bombbay1.L</object-name>
+    <object-name>bombbay2.R</object-name>
+    <object-name>bombbay1.R</object-name>
+    <object-name>bombbay2.L</object-name>
+    <object-name>rearbombbay.R</object-name>
+    <object-name>rearbombbay.L</object-name>
+    <object-name>reardoor.L</object-name>
+    <object-name>reardoor.R</object-name>
+    <object-name>reardoor</object-name>
+    <object-name>rearfuselage.mil</object-name>
+    <object-name>windshield.R</object-name>
+    <object-name>windshield.L</object-name>
+    <object-name>elevator.L</object-name>
+    <object-name>elevator.R</object-name>
+    <object-name>stab.L</object-name>
+    <object-name>stab.R</object-name>
+    <object-name>vstab</object-name>
+    <object-name>rudder</object-name>
+    <object-name>geardoorF.L</object-name>
+    <object-name>geardoorF.R</object-name>
+    <object-name>geardoor1.L</object-name>
+    <object-name>geardoor1.R</object-name>
+    <object-name>geardoor2.L</object-name>
+    <object-name>geardoor2.R</object-name>
     </effect>
--->
+
+  <effect>
+    <inherits-from>Aircraft/b26/Models/Effects/glass</inherits-from>
+    <object-name>cockpitglass</object-name>
+    <object-name>noseglass</object-name>
+    <object-name>turretglass</object-name>
+    <object-name>rearglass</object-name>
+    <object-name>reardoorglass</object-name>
+  </effect>
+
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>nosecone.mil</object-name>
+    <object-name>guns.L</object-name>
+    <object-name>guns.R</object-name>
+    <object-name>wing.R</object-name>
+    <object-name>wing.L</object-name>
+    <object-name>engine.R</object-name>
+    <object-name>engine.L</object-name>
+    <object-name>aileron.L</object-name>
+    <object-name>aileron.R</object-name>
+    <object-name>outflap.L</object-name>
+    <object-name>outflap.R</object-name>
+    <object-name>hatch.R</object-name>
+    <object-name>hatch.L</object-name>
+    <object-name>inflap.L</object-name>
+    <object-name>inflap.R</object-name>
+    <object-name>geardoorF.L</object-name>
+    <object-name>geardoorF.R</object-name>
+    <object-name>geardoor1.L</object-name>
+    <object-name>geardoor1.R</object-name>
+    <object-name>geardoor2.L</object-name>
+    <object-name>geardoor2.R</object-name>
+    <object-name>bombbay1.L</object-name>
+    <object-name>bombbay1.R</object-name>
+    <object-name>bombbay2.L</object-name>
+    <object-name>bombbay2.R</object-name>
+    <object-name>rearbombbay.R</object-name>
+    <object-name>rearbombbay.L</object-name>
+    <object-name>reardoor.L</object-name>
+    <object-name>reardoor.R</object-name>
+    <object-name>reardoor</object-name>
+    <object-name>rearfuselage.mil</object-name>
+    <object-name>windshield.L</object-name>
+    <object-name>windshield.R</object-name>
+    <object-name>elevator.L</object-name>
+    <object-name>elevator.R</object-name>
+    <object-name>stab.L</object-name>
+    <object-name>stab.R</object-name>
+    <object-name>vstab</object-name>
+    <object-name>rudder</object-name>
+    <object-name>nacelle.R</object-name>
+    <object-name>nacelle.L</object-name>
+    <object-name>skydome.R</object-name>
+    <object-name>skydome.L</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>b26-1.png</texture>
+  </animation>
 
  <model>
 	<name>cockpit</name>
@@ -85,8 +178,8 @@
 <!--prop -->
 
   <model>
-    <name>pdiskL</name>
-    <path>Aircraft/mosquito/Models/pdiskL.xml</path>
+    <name>propL</name>
+    <path>Aircraft/b26/Models/Propeller/prop0.xml</path>
     <offsets>
    <x-m>3.66</x-m>
    <y-m>-3.294</y-m>
@@ -94,101 +187,40 @@
     </offsets>
   </model>	
 
- <animation>
-  <type>select</type>
-  <object-name>prop.L</object-name>
-  <condition>
-   <less-than>
-    <property>engines/engine[0]/rpm</property>
-    <value>1000</value>
-   </less-than>
-  </condition>
- </animation>
 
- <animation>
-  <type>spin</type>
-  <object-name>prop.L</object-name>
-  <property>engines/engine[0]/rpm</property>
-  <factor>0.479</factor>
-  <center>
-   <x-m>-3.786</x-m>
-   <y-m>-3.294</y-m>
-   <z-m>0.181</z-m>
-  </center>
-  <axis>
-   <x>1.0</x>
-   <y>0.0</y>
-   <z>0.0</z>
-  </axis>
- </animation>
- <animation>
-  <type>spin</type>
-  <object-name>prophub.L</object-name>
-  <property>engines/engine[0]/rpm</property>
-  <factor>0.479</factor>
-  <center>
-   <x-m>-3.786</x-m>
-   <y-m>-3.294</y-m>
-   <z-m>0.181</z-m>
-  </center>
-  <axis>
-   <x>1.0</x>
-   <y>0.0</y>
-   <z>0.0</z>
-  </axis>
- </animation>
+
   <model>
     <name>pdiskL</name>
-    <path>Aircraft/mosquito/Models/pdiskR.xml</path>
+    <path>Aircraft/b26/Models/Propeller/propdisk0.xml</path>
+    <offsets>
+   <x-m>3.66</x-m>
+   <y-m>-3.294</y-m>
+   <z-m>0.181</z-m>
+    </offsets>
+  </model>	
+
+  <model>
+    <name>propL</name>
+    <path>Aircraft/b26/Models/Propeller/prop1.xml</path>
     <offsets>
    <x-m>3.66</x-m>
    <y-m>3.294</y-m>
    <z-m>0.181</z-m>
     </offsets>
   </model>	
-<animation>
-  <type>select</type>
-  <object-name>prop.R</object-name>
-  <condition>
-   <less-than>
-    <property>engines/engine[1]/rpm</property>
-    <value>1000</value>
-   </less-than>
-  </condition>
- </animation>
 
- <animation>
-  <type>spin</type>
-  <object-name>prop.R</object-name>
-  <property>engines/engine[1]/rpm</property>
-  <factor>0.479</factor>
-  <center>
-   <x-m>-3.786</x-m>
+ 
+  <model>
+    <name>pdiskR</name>
+    <path>Aircraft/b26/Models/Propeller/propdisk1.xml</path>
+    <offsets>
+   <x-m>3.66</x-m>
    <y-m>3.294</y-m>
    <z-m>0.181</z-m>
-  </center>
-  <axis>
-   <x>1.0</x>
-   <y>0.0</y>
-   <z>0.0</z>
-  </axis>
- </animation>
- <animation>
-  <type>spin</type>
-  <object-name>prophub.R</object-name>
-  <property>engines/engine[1]/rpm</property>
-  <factor>0.479</factor>
-  <center>
-   <x-m>-3.786</x-m>
-   <y-m>3.294</y-m>
-   <z-m>0.181</z-m>
-  </center>
-  <axis>
-   <x>1.0</x>
-   <y>0.0</y>
-   <z>0.0</z>
-  </axis>
- </animation>
+    </offsets>
+  </model>	
+
+ 
 
 <!-- nosegear -->
 <animation>
@@ -886,45 +918,115 @@
 		<object-name>rearglass</object-name>
 	</animation>
 
-  <animation>
-    <type>material</type>
-    <object-name>fuselage</object-name>
-    <object-name>guns.L</object-name>
-    <object-name>guns.R</object-name>
-    <object-name>wing.R</object-name>
-    <object-name>wing.L</object-name>
-    <object-name>engine.R</object-name>
-    <object-name>engine.L</object-name>
-    <object-name>aileron.L</object-name>
-    <object-name>aileron.R</object-name>
-    <object-name>outflap.L</object-name>
-    <object-name>outflap.R</object-name>
-    <object-name>inflap.L</object-name>
-    <object-name>inflap.R</object-name>
-    <object-name>geardoorF.L</object-name>
-    <object-name>geardoorF.R</object-name>
-    <object-name>geardoor1.L</object-name>
-    <object-name>geardoor1.R</object-name>
-    <object-name>geardoor2.L</object-name>
-    <object-name>geardoor2.R</object-name>
-    <object-name>bombbay1.L</object-name>
-    <object-name>bombbay1.R</object-name>
-    <object-name>bombbay2.L</object-name>
-    <object-name>bombbay2.R</object-name>
-    <object-name>gunport.L</object-name>
-    <object-name>gunport.R</object-name>
-    <object-name>reardoor</object-name>
-    <object-name>windshield.L</object-name>
-    <object-name>windshield.R</object-name>
-    <object-name>elevator.L</object-name>
-    <object-name>elevator.R</object-name>
-    <object-name>horstab.L</object-name>
-    <object-name>horstab.R</object-name>
-    <object-name>vstab</object-name>
-    <object-name>rudder</object-name>
-    <property-base>sim/model/livery</property-base>
-    <texture-prop>texture</texture-prop>
-    <texture>b26-1.png</texture>
-  </animation>
+ <animation>
+  <type>translate</type>
+  <object-name>reardoor.L</object-name>
+  <property>controls/doors/reardoor.L/position-norm</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0.0</dep>
+   </entry>
+   <entry>
+    <ind>0.2</ind>
+    <dep>0.09</dep>
+   </entry>
+   <entry>
+    <ind>1.00</ind>
+    <dep>0.09</dep>
+   </entry>
+  </interpolation>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.45</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>reardoor.L</object-name>
+  <property>controls/doors/reardoor.L/position-norm</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0.0</dep>
+   </entry>
+   <entry>
+    <ind>0.2</ind>
+    <dep>0.0</dep>
+   </entry>
+  <entry>
+    <ind>1.00</ind>
+    <dep>55.0</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>13.46</x-m>
+   <y-m>0.2</y-m>
+   <z-m>0.18</z-m>
+  </center>
+  <axis>
+   <x>-1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>reardoor.R</object-name>
+  <property>controls/doors/cdoor/position-norm</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0.0</dep>
+   </entry>
+   <entry>
+    <ind>0.2</ind>
+    <dep>0.09</dep>
+   </entry>
+   <entry>
+    <ind>1.00</ind>
+    <dep>0.09</dep>
+   </entry>
+  </interpolation>
+  <axis>
+   <x>0.0</x>
+   <y>-1.0</y>
+   <z>0.45</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>reardoor.R</object-name>
+  <property>controls/doors/cdoor/position-norm</property>
+  <interpolation>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0.0</dep>
+   </entry>
+   <entry>
+    <ind>0.2</ind>
+    <dep>0.0</dep>
+   </entry>
+  <entry>
+    <ind>1.00</ind>
+    <dep>55.0</dep>
+   </entry>
+  </interpolation>
+  <center>
+   <x-m>13.46</x-m>
+   <y-m>-0.2</y-m>
+   <z-m>0.18</z-m>
+  </center>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
 
 </PropertyList>
