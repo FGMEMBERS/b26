@@ -8,7 +8,7 @@ YASim aerodynamic model for a B-26 Marauder
 -->
 
 <!-- Weight of everything but fuel   -->
-<airplane mass="24000">
+<airplane mass="24000" version="YASIM_VERSION_CURRENT">
 
 <!-- Approach configuration -->
 <approach speed="99" aoa="7">

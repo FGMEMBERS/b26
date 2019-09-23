@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>propeller.ac</path>
+
+
+<animation>
+  <type>select</type>
+    <object-name>prop1</object-name>
+    <object-name>prop2</object-name>
+    <object-name>prop3</object-name>
+    <object-name>prop4</object-name>
+  <condition>
+   <less-than>
+    <property>engines/engine[1]/rpm</property>
+    <value>600</value>
+   </less-than>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>spin</type>
+    <object-name>prop1</object-name>
+    <object-name>prop2</object-name>
+    <object-name>prop3</object-name>
+    <object-name>prop4</object-name>
+  <property>engines/engine[1]/rpm</property>
+  <factor>-0.479</factor>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+<animation>
+  <type>spin</type>
+  <object-name>prophub</object-name>
+  <property>engines/engine[1]/rpm</property>
+  <factor>-0.479</factor>
+  <center>
+   <x-m>0.0</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>blend</type>
+    <object-name>prop1</object-name>
+    <object-name>prop2</object-name>
+    <object-name>prop3</object-name>
+    <object-name>prop4</object-name>
+  <property>engines/engine[1]/rpm</property>
+  <factor>0.0016</factor>
+  <min>0.0</min>
+  <max>0.6</max>
+ </animation>
+
+</PropertyList>

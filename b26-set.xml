@@ -50,13 +50,16 @@ don@sol2500.net
   <model>
    <path>Aircraft/b26/Models/B-26.xml</path>
   <livery>
+    <amb_correction type="float">0.2</amb_correction>
     <file/>
+    <refl_correction type="float">-0.5</refl_correction>
   </livery>
    <crew>
      <pilot>
        <visible type="double">1</visible>
      </pilot>
    </crew>
+    <map include="Models/map.xml"/>
   </model> 
 
 
@@ -111,24 +114,6 @@ don@sol2500.net
    </config>
   </view>
 
-  <view n="100">
-   <name>Walk View</name>
-   <type>lookfrom</type>
-   <internal archive="y">true</internal>
-    <config>
-        <from-model type="bool">true</from-model>
-        <from-model-idx type="int">0</from-model-idx>
-        <ground-level-nearplane-m type="double">0.01</ground-level-nearplane-m>
-        <default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
-        <default-pitch-deg type="double">0</default-pitch-deg>
-        <default-heading-deg type="double">0</default-heading-deg>
-        <front-direction-deg type="double">0</front-direction-deg>
-     <x-offset-m archive="y" type="double">0.0</x-offset-m>
-     <y-offset-m archive="y" type="double">0.8</y-offset-m>
-     <z-offset-m archive="y" type="double">4.05</z-offset-m>
-     <pitch-offset-deg>3</pitch-offset-deg>
-    </config>
-  </view>
   <view n="101">
    <enabled type="bool"
 			userarchive="n">false</enabled>
@@ -280,6 +265,9 @@ don@sol2500.net
     </config>
   </view>
 
+  <walker>
+    <start-inside type="bool">true</start-inside>
+  </walker>
 
  <autopilot>
    <htempmode type="bool">false</htempmode>
@@ -612,7 +600,7 @@ Reduce Speed to 160 mph, drop Gear and Flaps. approach at 140 mph and do not fla
         <desc>Toggle Cockpit door</desc>
         <binding n="0">
           <command>nasal</command>
-          <script>beaufighter.toggle_cdoor()</script>
+          <script>b-26.toggle_cdoor();</script>
         </binding>
       </key>
       <key n="83">
@@ -620,7 +608,7 @@ Reduce Speed to 160 mph, drop Gear and Flaps. approach at 140 mph and do not fla
         <desc>Toggle Front-Door</desc>
         <binding n="0">
           <command>nasal</command>
-          <script>b-26.toggle_fdoor()</script>
+          <script>b-26.toggle_fdoor();</script>
         </binding>
       </key>
       <key n="68">
@@ -628,7 +616,7 @@ Reduce Speed to 160 mph, drop Gear and Flaps. approach at 140 mph and do not fla
         <desc>Toggle Rear-Door</desc>
         <binding n="0">
           <command>nasal</command>
-          <script>b-26.toggle_rdoor()</script>
+          <script>b-26.toggle_rdoor();</script>
         </binding>
       </key>
       <key n="109"> 

@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 
 <PropertyList>
-<sim>
+  <sim>
     <model>
-        <livery>
-            <name type="string">RAF desert</name>
-
-            <texture>Liveries/b26-1a.png</texture>
-
-        </livery>
+      <livery>
+        <name type="string">RAF desert</name>
+        <texture>Liveries/b26-1a.png</texture>
+        <refl_correction>-0.4</refl_correction>
+        <amb_correction>-0.1</amb_correction>
+      </livery>
     </model>
-</sim>
+  </sim>
 </PropertyList>
